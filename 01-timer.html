@@ -4,33 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    
+    
     <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js">
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-651d7991.js">
     <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-80d0dc0f.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/01-timer-3ec19d61.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/common-6fdf5651.css">
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <div class="btn-container">
+      <p>
+        <a class="btn" href="index.html">Go back</a>
+      </p>
+    </div>
 
-    <input type="text" id="datetime-picker" />
-    <button type="button" data-start disabled>Start</button>
-
-    <div class="timer">
-      <div class="field">
-        <span class="value" data-days>00</span>
-        <span class="label">Days</span>
-      </div>
-      <div class="field">
-        <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="field">
-        <span class="value" data-minutes>00</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="field">
-        <span class="value" data-seconds>00</span>
-        <span class="label">Seconds</span>
+    <div class="thumb-block">
+      <div class="position">
+        <div class="calendar">
+          <input class="input-calendar" type="text" id="datetime-picker" />
+          <button class="btn-input" type="button" data-start disabled>
+            Start
+          </button>
+        </div>
+        <div class="timer">
+          <div class="field">
+            <span class="value" data-days>00</span>
+            <span class="label">Days</span>
+          </div>
+          <div class="field">
+            <span class="value" data-hours>00</span>
+            <span class="label">Hours</span>
+          </div>
+          <div class="field">
+            <span class="value" data-minutes>00</span>
+            <span class="label">Minutes</span>
+          </div>
+          <div class="field">
+            <span class="value" data-seconds>00</span>
+            <span class="label">Seconds</span>
+          </div>
+        </div>
       </div>
     </div>
 
