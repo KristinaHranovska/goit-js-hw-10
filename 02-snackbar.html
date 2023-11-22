@@ -4,34 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promise generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+
+    
+    
     <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js">
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-651d7991.js">
     <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-80d0dc0f.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/02-snackbar-ec34c9ff.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/common-6fdf5651.css">
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
+    <div class="btn-container">
+      <p>
+        <a class="btn" href="index.html">Go back</a>
+      </p>
+    </div>
 
-    <form class="form">
-      <label>
-        Delay (ms)
-        <input type="number" name="delay" required />
-      </label>
-
-      <fieldset>
-        <legend>State</legend>
-        <label>
-          <input type="radio" name="state" value="fulfilled" required />
-          Fulfilled
+    <div class="thumb-block">
+      <form class="form">
+        <label class="label-delay">
+          Delay (ms) <br />
+          <input type="number" name="delay" required />
         </label>
-        <label>
-          <input type="radio" name="state" value="rejected" required />
-          Rejected
-        </label>
-      </fieldset>
-
-      <button type="submit">Create notification</button>
-    </form>
+        <fieldset class="frame">
+          <legend class="legend">State</legend>
+          <label class="label-radio">
+            <input type="radio" name="state" value="fulfilled" required />
+            <span>Fulfilled</span>
+          </label>
+          <label class="label-radio">
+            <input type="radio" name="state" value="rejected" required />
+            <span>Rejected</span>
+          </label>
+        </fieldset>
+        <button class="btn-start" type="submit">Create notification</button>
+      </form>
+    </div>
 
     
   </body>
