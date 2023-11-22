@@ -70,6 +70,10 @@ function startTimer() {
     btnStart.disabled = true;
     input.disabled = true;
 
+    // animatedDiv - данна змінна потрібна для стилізації
+    const animatedDiv = document.querySelector('#animatedDiv');
+    animatedDiv.classList.add('animated');
+
     const timer = setInterval(() => {
         const currentDate = new Date();
         const targetDate = new Date(input.value);
@@ -86,8 +90,9 @@ function startTimer() {
 
         if (isTimerFinished) {
             clearInterval(timer);
-            btnStart.disabled = false;
             input.disabled = false;
+
+            animatedDiv.classList.remove('animated');
         }
     }, 1000);
 }
