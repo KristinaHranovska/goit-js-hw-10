@@ -1,0 +1,160 @@
+body {
+    background-color: #64b56a;
+    font-family: Montserrat;
+}
+
+.btn-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    top: 0;
+    left: 0;
+
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #fff;
+    border-radius: 18px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 10px 30px;
+    margin: 10px 10px;
+
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    border-radius: 140px;
+    background-color: #fff;
+    top: 50px;
+    left: 50%;
+    z-index: -1;
+
+    animation: wave 5s infinite linear;
+    transition: all 1s;
+
+}
+
+@keyframes wave {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.btn:hover {
+    color: #64b56a;
+}
+
+.btn:hover::after {
+    top: 25px;
+}
+
+.thumb-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.form {
+    width: 400px;
+    border: 2px solid #808080;
+    padding: 20px;
+}
+
+.label-delay {
+    display: block;
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin-bottom: 24px;
+}
+
+.label-delay input {
+    width: 350px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    outline: transparent;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    padding: 10px 16px;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    border-radius: 4px;
+    border: 2px solid #808080;
+
+    margin-bottom: 24px;
+}
+
+.legend {
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.label-radio {
+    color: #2E2F42;
+    font-size: 16px;
+    line-height: 1.5;
+
+    padding: 8px 16px;
+}
+
+.label-radio:hover,
+.label-radio input:checked+span {
+    font-weight: 600;
+}
+
+.label-radio input {
+    margin-right: 8px;
+}
+
+.btn-start {
+    width: 350px;
+
+    border-radius: 8px;
+    background-color: #407953;
+    border: transparent;
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 8px 16px;
+}
+
+.btn-start:hover {
+    background-color: #519266;
+}
